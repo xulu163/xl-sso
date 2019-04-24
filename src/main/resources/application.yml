@@ -1,0 +1,30 @@
+﻿server:
+    port: 8081
+spring:
+    thymeleaf:
+        cache: false
+        enabled: false
+    application:
+        name: mouse
+    datasource:
+        url: jdbc:mysql://47.98.54.210:3306/mouse?autoReconnect=true&zeroDateTimeBehavior=convertToNull
+        username: root
+        password: a123456
+        driver-class-name: com.mysql.jdbc.Driver
+        initial-size: 20
+        max-active: 100
+        max-idle: 5
+        max-wait: 10000
+        min-idle: 1
+        testOnBorrow: true
+        validationQuery: SELECT 1
+
+## 日志支持
+logging:
+    file: ./log/mouse.log
+    level:
+        com:
+            wolves: INFO
+mybatis: 
+    mapperLocations: classpath:mybatis/*.xml
+    typeAliasesPackage: com.wolves.mouse
