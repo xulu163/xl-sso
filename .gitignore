@@ -10,3 +10,4 @@
 clienta/src/main/resources/
 clientb/src/main/resources/
 log/
+auth/target/
