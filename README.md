@@ -1,2 +1,2 @@
 # xl-sso
-a sso project using SpringSession
+a sso project using springsecurity
