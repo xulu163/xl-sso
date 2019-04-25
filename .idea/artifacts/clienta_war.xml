@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="clienta:war">
+    <output-path>$PROJECT_DIR$/clienta/target</output-path>
+    <root id="archive" name="xl-sso.war">
+      <element id="artifact" artifact-name="clienta:war exploded" />
+    </root>
+  </artifact>
+</component>
