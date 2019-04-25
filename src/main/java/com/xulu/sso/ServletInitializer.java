@@ -3,6 +3,9 @@ package com.xulu.sso;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
+/**
+ * @author xulu
+ */
 public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override

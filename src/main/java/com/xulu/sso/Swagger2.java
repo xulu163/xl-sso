@@ -20,7 +20,7 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.wolves.mouse.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.xulu.sso.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .useDefaultResponseMessages(false)
@@ -29,7 +29,7 @@ public class Swagger2 {
 
     private ApiInfo apiInfo() {
         Contact contact = new Contact("xl-sso", "https://github.com/xulu163/xl-sso", "java_xul@163.com");
-        ApiInfo apiInfo = new ApiInfo("xl-sso APIs",//大标题
+        ApiInfo apiInfo = new ApiInfo("xl-sso APIs",
                         "a sso product using springSession",
                 "1.0",
                 "https://github.com/xulu163/xl-sso",

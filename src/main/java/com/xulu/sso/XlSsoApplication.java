@@ -2,23 +2,19 @@ package com.xulu.sso;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.springframework.web.context.request.RequestContextListener;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
+/**
+ * @author xulu
+ */
 @SpringBootApplication
-@EnableTransactionManagement
 @ComponentScan(basePackages = "com.xulu")
-public class XlSsoApplication {
+@EnableResourceServer
+public class XlSsoApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		SpringApplication.run(XlSsoApplication.class, args);
 	}
-
-	@Bean
-	public RequestContextListener requestContextListener(){
-		return new RequestContextListener();
-	}
-
 }
